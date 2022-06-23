@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="15">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Assignment 3</title>
+    <style>
+        .container {
+            margin-top:6rem;
+            max-width:70%;
+        }
+    </style>
+</head>
+<body style="background-color: #816797;">
+    <div class="container mx-auto px-20">
+        <div class="flex flex-col w-full" style="cursor: auto;">
+          <div class="grid gap-4 grid-cols-1 sm:grid-cols-2 my-2 w-full">
+                <div class="metric-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-lg p-4 max-w-72 w-full" style="cursor: auto;">
+                <a aria-label="Unsplash Downloads" target="_blank" rel="noopener noreferrer" href="https://stackdiary.com/">
+                    <div class="flex items-center text-gray-900 dark:text-gray-100" style="cursor: auto;">Water
+                    <svg class="h-4 w-4 ml-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="cursor: auto;">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                    </svg>
+                    </div>
+                </a>
+                <p class="mt-2 text-3xl font-bold spacing-sm text-black dark:text-white" style="cursor: auto;">{{.Water}} meter</p>
+                <p class="mt-2 text-1xl font-bold spacing-sm text-black dark:text-white" style="cursor: auto;">Status: {{.WaterStatus}}</p>
+                </div>
+                <div class="metric-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-lg p-4 max-w-72 w-full" style="cursor: auto;">
+                <a aria-label="Unsplash Views" target="_blank" rel="noopener noreferrer" href="https://stackdiary.com/">
+                    <div class="flex items-center text-gray-900 dark:text-gray-100" style="cursor: auto;">Wind
+                    <svg class="h-4 w-4 ml-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                    </svg>
+                    </div>
+                </a>
+                <p class="mt-2 text-3xl font-bold spacing-sm text-black dark:text-white" style="cursor: auto;">{{.Wind}} meter/sec</p>
+                <p class="mt-2 text-1xl font-bold spacing-sm text-black dark:text-white" style="cursor: auto;">Status: {{.WindStatus}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
